@@ -44,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="124" lean-forward="false" selection-start-line="3" selection-start-column="124" selection-end-line="3" selection-end-column="124" />
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -358,7 +358,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534573762129</updated>
-      <workItem from="1534573763659" duration="7961000" />
+      <workItem from="1534573763659" duration="8088000" />
     </task>
     <task id="LOCAL-00001" summary="First push of create app">
       <created>1534574667355</created>
@@ -371,7 +371,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7961000" />
+    <option name="totallyTimeSpent" value="8088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1440" height="839" extended-state="6" />
@@ -517,7 +517,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="124" lean-forward="false" selection-start-line="3" selection-start-column="124" selection-end-line="3" selection-end-column="124" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
