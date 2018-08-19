@@ -7,27 +7,41 @@ import _ from 'lodash';
 
 const IMAGES =
     [{
-        src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-        thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
+        src: "https://wp.zillowstatic.com/1/162Acari-042-95d6b9.jpg",
+        thumbnail: "https://wp.zillowstatic.com/1/162Acari-042-95d6b9.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 174,
         isSelected: true,
-        caption: "After Rain (Jeshu John - designerspics.com)"
+        caption: "My Dream Home"
     },
         {
-            src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-            thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+            src: "https://wp.zillowstatic.com/1/David-Hasselhoffs-kitchen-62f58c.jpg",
+            thumbnail: "https://wp.zillowstatic.com/1/David-Hasselhoffs-kitchen-62f58c.jpg",
             thumbnailWidth: 320,
             thumbnailHeight: 212,
-            tags: [{value: "Ocean", title: "Ocean"}, {value: "People", title: "People"}],
-            caption: "Boats (Jeshu John - designerspics.com)"
+            caption: "My Kitchen"
         },
 
         {
-            src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-            thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+        src: "https://wp.zillowstatic.com/1/The-White-House-3228c3-640x427.jpg",
+        thumbnail: "https://wp.zillowstatic.com/1/The-White-House-3228c3-640x427.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+        caption: "White house"
+    },
+        {
+            src: "https://photos.zillowstatic.com/p_h/ISe87v7o8m569l1000000000.jpg",
+            thumbnail: "https://photos.zillowstatic.com/p_h/ISe87v7o8m569l1000000000.jpg",
             thumbnailWidth: 320,
-            thumbnailHeight: 212
+            thumbnailHeight: 212,
+            caption: "My friends house"
+        },
+        {
+            src: "https://photos.zillowstatic.com/p_f/ISq9kfp4m9eyco1000000000.jpg",
+            thumbnail: "https://photos.zillowstatic.com/p_f/ISq9kfp4m9eyco1000000000.jpg",
+            thumbnailWidth: 320,
+            thumbnailHeight: 212,
+            caption: "brady's house"
         }]
 
 
@@ -37,9 +51,9 @@ const IMAGES =
 class Photo extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            hasError: false
-        };
+        this.state = {}
+
+
     }
 
     componentDidMount() {
@@ -48,9 +62,13 @@ class Photo extends Component {
 
 
     render() {
-        return (
-            <div><Gallery images={IMAGES}/></div>
-        )
+
+            if(IMAGES.size ==0){
+                return (  <div>No image to display</div>)
+            }else {
+               return( <div><Gallery images={IMAGES}/></div>)
+            }
+
 
     }
 }
